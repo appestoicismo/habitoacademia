@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pare de Pagar Academia à Toa — Instale o hábito 3x/semana (Low Ticket)</title>
+  <meta name="description" content="Dê play em um áudio de 15–20 minutos e instale o hábito de ir à academia 3x por semana. Produto low ticket com garantia de 7 dias.">
+  <meta property="og:title" content="Pare de Pagar Academia à Toa" />
+  <meta property="og:description" content="Áudio guiado + checklist para criar o hábito de academia 3x/semana. Dê play e sinta vontade real de treinar." />
+  <meta property="og:type" content="product" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518609571773-39b7d303a82f?q=80&w=1200&auto=format&fit=crop" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#0f141a; --muted:#9fb1c3; --text:#e9f0f6; --brand:#6ce5b1; --brand-2:#2bd4c5; --accent:#ffd166; --shadow:0 10px 30px rgba(0,0,0,.35); --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 10% -10%, #15202b 0%, #0b0f14 45%) no-repeat, var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px,92%);margin:0 auto}
+    .btn{display:inline-flex;gap:.6rem;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#042018;font-weight:800;border:0;box-shadow:var(--shadow);cursor:pointer;transition:transform .06s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.secondary{background:#1b2530;color:var(--text);font-weight:700}
+    header{position:sticky;top:0;z-index:20;background:rgba(11,15,20,.6);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:.75rem;align-items:center;font-weight:900}
+    .brand .logo{width:36px;height:36px;border-radius:10px;background:conic-gradient(from 180deg at 50% 50%, var(--brand) 0 40%, var(--accent) 40% 65%, var(--brand-2) 65% 100%);box-shadow:var(--shadow)}
+    .hero{padding:54px 0 32px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:.5rem;padding:6px 10px;border-radius:999px;background:#16212c;border:1px solid rgba(255,255,255,.06);color:var(--muted);font-weight:600;font-size:.85rem}
+    .hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin:14px 0 12px}
+    .hero p{color:#cdd9e3;font-size:1.05rem}
+    .hero .checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 24px}
+    .check{display:flex;gap:.6rem;align-items:flex-start;background:#101720;border:1px solid rgba(255,255,255,.06);padding:10px 12px;border-radius:12px}
+    .badge{display:inline-flex;gap:.4rem;align-items:center;padding:6px 10px;border-radius:999px;background:#14202a;color:#b8c9d8;border:1px solid rgba(255,255,255,.06);font-weight:600}
+    .mock{position:relative;background:linear-gradient(180deg,#121a23,#0d1218);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+    .disc{display:flex;align-items:center;gap:14px;background:#0f161f;border:1px dashed rgba(255,255,255,.1);padding:12px;border-radius:14px}
+    .disc i{width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff 0 8%,#9ae6b4 8% 65%,#0c1810 65% 100%);box-shadow:inset 0 0 8px rgba(0,0,0,.4)}
+    .stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}
+    .stat{flex:1 1 160px;background:#0f161f;border:1px solid rgba(255,255,255,.06);padding:12px;border-radius:12px;text-align:center}
+    section{padding:48px 0}
+    h2{font-size:clamp(1.4rem,3.6vw,2.2rem);margin:0 0 10px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .card{background:linear-gradient(180deg,#0f141a,#0c1116);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px}
+    .card h3{margin:8px 0}
+    .list{display:grid;gap:10px;margin:10px 0 0}
+    .list li{display:flex;gap:.6rem;align-items:flex-start}
+    .tick{width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,#8ff7c6,#2bd4c5);display:inline-grid;place-items:center;color:#06261b;font-weight:900}
+    .offer{display:grid;grid-template-columns:1fr;gap:22px}
+    .price{font-size:2.6rem;font-weight:900}
+    .strike{color:#8aa0b3;text-decoration:line-through;margin-left:8px;font-size:1rem}
+    .kupon{display:flex;gap:10px;align-items:center;margin-top:8px}
+    .kupon code{background:#14202a;border:1px dashed rgba(255,255,255,.16);padding:6px 10px;border-radius:8px;font-weight:700}
+    .countdown{font-variant-numeric:tabular-nums;background:#152532;border:1px solid rgba(255,255,255,.08);padding:8px 12px;border-radius:10px}
+    .guarantee{display:flex;gap:12px;align-items:flex-start;background:#0f161f;border:1px solid rgba(255,255,255,.08);padding:14px;border-radius:14px}
+    .faq details{background:#0f161f;border:1px solid rgba(255,255,255,.08);padding:14px;border-radius:14px}
+    .footer{padding:30px 0 60px;color:#9fb1c3;font-size:.9rem}
+    @media (max-width: 960px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid.cols-3{grid-template-columns:1fr}
+      .grid.cols-2{grid-template-columns:1fr}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Pare de Pagar Academia à Toa",
+    "description": "Áudio guiado + bônus para instalar o hábito de ir à academia 3x por semana.",
+    "brand": {"@type": "Brand", "name": "Heitor – Criador de Ofertas Low Ticket"},
+    "offers": {"@type": "Offer","priceCurrency": "BRL","price": "19.90","availability": "https://schema.org/InStock"}
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Topo">
+      <a class="brand" href="#topo" aria-label="Ir ao topo">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Pare de Pagar <span style="color:var(--brand)">Academia</span> à Toa</span>
+      </a>
+      <div class="nav-cta">
+        <a class="btn secondary" href="#conteudo">Ver o que recebe</a>
+        <a class="btn" href="#checkout">Garantir por R$19,90</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="topo">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">🎧 Áudio guiado • 15–20min/dia • Garantia 7 dias</span>
+          <h1>Instale o hábito de ir à academia <span style="color:var(--brand)">3x por semana</span> sem brigar com a força de vontade</h1>
+          <p>Chega de pagar e faltar. Dê <strong>play</strong>, relaxe e deixe sua mente trabalhar a seu favor. Feito para quem quer consistência agora.</p>
+          <div class="checks">
+            <div class="check"><span class="tick">✓</span><div><strong>Hábito em foco:</strong> sugestões mentais para sair de casa e treinar.</div></div>
+            <div class="check"><span class="tick">✓</span><div><strong>Rápido de usar:</strong> sessões curtas; bônus pré‑treino (5min) e noturna (10min).</div></div>
+            <div class="check"><span class="tick">✓</span><div><strong>Ferramental real:</strong> MP3 + checklist de frequência + guia PDF.</div></div>
+            <div class="check"><span class="tick">✓</span><div><strong>Baixo custo, alto impacto:</strong> pare de desperdiçar mensalidade.</div></div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="#checkout">Quero começar hoje</a>
+            <a class="btn secondary" href="#como-funciona">Como funciona</a>
+          </div>
+          <div class="stats" aria-label="Destaques">
+            <div class="stat"><div class="muted">Duração diária</div><div style="font-weight:800">15–20 min</div></div>
+            <div class="stat"><div class="muted">Frequência alvo</div><div style="font-weight:800">3x/semana</div></div>
+            <div class="stat"><div class="muted">Formato</div><div style="font-weight:800">Áudio MP3 + PDF</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="mock" aria-label="Demonstração visual do produto">
+            <div class="disc">
+              <i aria-hidden="true"></i>
+              <div>
+                <strong>Faixa Principal — “Motivação Automática”</strong>
+                <div class="muted">Indução guiada + sugestões para consistência • ~20min</div>
+              </div>
+            </div>
+            <div style="margin-top:12px" class="disc">
+              <i aria-hidden="true"></i>
+              <div>
+                <strong>Pré‑treino 5’</strong>
+                <div class="muted">Turbo para amarrar o tênis e sair de casa</div>
+              </div>
+            </div>
+            <div style="margin-top:12px" class="disc">
+              <i aria-hidden="true"></i>
+              <div>
+                <strong>Noturna 10’</strong>
+                <div class="muted">Visualização antes de dormir para o dia seguinte</div>
+              </div>
+            </div>
+            <div style="margin-top:14px" class="badge">📄 Guia prático + checklist de frequência</div>
+            <div style="margin-top:16px" class="muted">Prévia de áudio (substitua pelo seu arquivo MP3):</div>
+            <audio controls style="width:100%;margin-top:6px">
+              <source src="sample.mp3" type="audio/mpeg" />
+              Seu navegador não suportou o player de áudio.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="como-funciona">
+      <h2>Como funciona (3 passos simples)</h2>
+      <p class="muted">Sem enrolação: use o áudio diariamente para treinar sua mente a <em>querer</em> treinar. Menos resistência, mais consistência.</p>
+      <div class="grid cols-3">
+        <div class="card"><h3>1) Dê play diariamente</h3><p>Ouça a faixa principal 15–20min/dia por 7–14 dias. Melhor horário: manhã ou antes de dormir.</p></div>
+        <div class="card"><h3>2) Ação rápida</h3><p>Nos dias de treino, ouça o pré‑treino de 5 minutos e <strong>saia de casa</strong>. A âncora mental acelera o impulso.</p></div>
+        <div class="card"><h3>3) Marque 3x/semana</h3><p>Use o checklist por 30 dias. Pequenas vitórias → motivação crescente → hábito consolidado.</p></div>
+      </div>
+    </section>
+
+    <section class="container" id="conteudo">
+      <h2>O que você vai receber</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>🎧 Áudio Principal • 20min</h3>
+          <ul class="list">
+            <li><span class="tick">✓</span><span>Indução relaxante + aprofundamento</span></li>
+            <li><span class="tick">✓</span><span>Sugestões para consistência e identidade ativa</span></li>
+            <li><span class="tick">✓</span><span>Sugestão pós‑hipnótica (gatilho ao vestir a roupa de treino)</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>⚡ Pré‑treino • 5min (Bônus)</h3>
+          <ul class="list">
+            <li><span class="tick">✓</span><span>Impulso imediato para sair de casa</span></li>
+            <li><span class="tick">✓</span><span>Afirmações curtas e energizantes</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🌙 Noturna • 10min (Bônus)</h3>
+          <ul class="list">
+            <li><span class="tick">✓</span><span>Visualização do próximo treino</span></li>
+            <li><span class="tick">✓</span><span>Consolidação do hábito em formação</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>📄 Guia + Checklist (Bônus)</h3>
+          <ul class="list">
+            <li><span class="tick">✓</span><span>Guia PDF simples (10 páginas) para iniciantes</span></li>
+            <li><span class="tick">✓</span><span>Checklist imprimível / digital de 30 dias</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="checkout">
+      <h2>Oferta de lançamento</h2>
+      <div class="offer">
+        <div class="card">
+          <h3>Plano Único — foco total no hábito</h3>
+          <p class="muted">Uma decisão, zero fricção. Tudo o que funciona, nada do que distrai.</p>
+          <div style="display:flex;align-items:baseline;gap:8px;margin:8px 0 12px">
+            <div class="price">R$ 19,90</div>
+            <div class="strike">R$ 39,90</div>
+          </div>
+          <ul class="list" style="margin-bottom:12px">
+            <li><span class="tick">✓</span><span>Áudio Principal 20min</span></li>
+            <li><span class="tick">✓</span><span>Pré‑treino 5min (Bônus)</span></li>
+            <li><span class="tick">✓</span><span>Noturna 10min (Bônus)</span></li>
+            <li><span class="tick">✓</span><span>Guia PDF + Checklist</span></li>
+            <li><span class="tick">✓</span><span>Acesso imediato</span></li>
+          </ul>
+          <div class="kupon">
+            <span class="badge">🎟️ Cupom</span>
+            <code>NAOVAISPERDER</code>
+            <span class="countdown" id="countdown">15:00</span>
+          </div>
+          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="#comprar" aria-label="Comprar Plano Único">Garantir por R$19,90</a>
+            <a class="btn secondary" href="#faq">Tirar dúvidas</a>
+          </div>
+          <div class="guarantee" style="margin-top:14px">
+            <div class="tick" aria-hidden="true">✓</div>
+            <div>
+              <strong>Garantia incondicional de 7 dias</strong>
+              <p class="muted" style="margin:.2rem 0 0">Se não curtir, devolvemos 100% do seu investimento. Sem letras miúdas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container faq" id="faq">
+      <h2>Perguntas frequentes</h2>
+      <div class="grid" style="gap:12px">
+        <details>
+          <summary><strong>Hipnose é segura? Vou “perder o controle”?</strong></summary>
+          <p class="muted">É relaxamento + foco. Você permanece consciente e pode parar quando quiser. Não use enquanto dirige ou opera máquinas.</p>
+        </details>
+        <details>
+          <summary><strong>Em quanto tempo vejo efeito?</strong></summary>
+          <p class="muted">Muita gente sente mudança de atitude em 1–2 semanas. Hábito sólido pede repetição. Objetivo: tornar ir à academia algo <em>natural</em>.</p>
+        </details>
+        <details>
+          <summary><strong>Preciso já estar treinando?</strong></summary>
+          <p class="muted">Não. O áudio ajuda a iniciar/retomar e manter 3x/semana. Use o pré‑treino nos dias de treino para sair sem enrolação.</p>
+        </details>
+        <details>
+          <summary><strong>Como recebo o material?</strong></summary>
+          <p class="muted">Após a compra, acesso imediato aos arquivos (MP3 + PDF) no seu e‑mail/área de membros.</p>
+        </details>
+        <details>
+          <summary><strong>Reembolso?</strong></summary>
+          <p class="muted">Sim, em até 7 dias. Sem burocracia.</p>
+        </details>
+      </div>
+      <p class="muted" style="margin-top:16px;font-size:.95rem">Aviso legal: produto de desenvolvimento pessoal; não substitui aconselhamento médico/psicológico. Resultados variam.</p>
+    </section>
+
+    <section class="container" aria-label="Chamada final">
+      <div class="card" style="display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+        <div>
+          <h3 style="margin:0">Pare de desperdiçar mensalidade. Comece hoje.</h3>
+          <p class="muted" style="margin:.2rem 0 0">Você precisa de 15 minutos e um fone de ouvido.</p>
+        </div>
+        <a class="btn" href="#checkout">Garantir acesso agora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+      <div>© <span id="year"></span> Pare de Pagar Academia à Toa. Todos os direitos reservados.</div>
+      <div><a href="#" class="muted">Termos</a> • <a href="#" class="muted">Privacidade</a> • <a href="#faq" class="muted">Suporte</a></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      const KEY='pta_timer_end_v2';
+      const el=document.getElementById('countdown');
+      if(!el) return;
+      const now=Date.now();
+      let end=localStorage.getItem(KEY);
+      if(!end || Number(end) < now){ end = String(now + 15*60*1000); localStorage.setItem(KEY,end); }
+      function pad(n){return String(n).padStart(2,'0')}
+      function tick(){
+        const t=Number(localStorage.getItem(KEY)||0)-Date.now();
+        if(t<=0){ el.textContent='00:00'; return; }
+        const s=Math.floor(t/1000), m=Math.floor(s/60), ss=s%60;
+        el.textContent=pad(m)+':'+pad(ss);
+        requestAnimationFrame(tick);
+      }
+      tick();
+    })();
+  </script>
+</body>
+</html>
