@@ -6,7 +6,7 @@
   <title>Pare de Pagar Academia à Toa — Sistema de Hábito em 3x/Semana</title>
   <meta name="description" content="O método de áudio hipnótico que faz você QUERER ir à academia 3x por semana. Para quem já pagou mensalidade e não consegue ser consistente.">
   
-  <!-- Facebook Pixel Code -->
+  <!-- Facebook Pixel Code (mantido) -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -27,7 +27,7 @@
   <meta property="og:title" content="Pare de Pagar Academia à Toa" />
   <meta property="og:description" content="Sistema de áudio hipnótico para criar o hábito de academia em 3x por semana" />
   <meta property="og:type" content="product" />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630/00d4aa/ffffff?text=Academia+3x+Semana" />
+  <meta property="og:image" content="https://github.com/usuario/repo/blob/main/og-academia-3x.jpg?raw=1" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,650 +48,144 @@
       --shadow: 0 4px 20px rgba(0,0,0,0.08);
       --shadow-hover: 0 8px 30px rgba(0,0,0,0.12);
     }
-    
     * { box-sizing: border-box; }
-    
-    body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.6;
-    }
-    
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
+    body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height:1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
     /* Header com prova social */
-    .header-bar {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 12px 20px;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-    
-    /* 1. Headline clara e específica */
-    .hero {
-      background: white;
-      padding: 60px 0 40px;
-      text-align: center;
-    }
-    
-    .headline {
-      font-size: clamp(2.2rem, 5vw, 3.8rem);
-      font-weight: 800;
-      line-height: 1.1;
-      margin: 0 0 20px;
-      color: var(--text);
-    }
-    
-    .headline .highlight {
-      color: var(--primary);
-      position: relative;
-    }
-    
-    .headline .highlight::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, var(--primary), var(--warning));
-      border-radius: 2px;
-    }
-    
-    .subheadline {
-      font-size: 1.4rem;
-      color: var(--text-light);
-      margin-bottom: 40px;
-      font-weight: 500;
-    }
-    
-    .hero-cta {
-      margin: 40px 0;
-    }
-    
-    /* 2. Demonstrativo do produto */
-    .product-demo {
-      background: white;
-      padding: 60px 0;
-      border-top: 1px solid var(--border);
-    }
-    
-    .demo-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-    
-    .demo-mockup {
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: var(--shadow);
-    }
-    
-    .audio-player-mock {
-      background: white;
-      border-radius: 15px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    
-    .play-icon {
-      width: 50px;
-      height: 50px;
-      background: var(--primary);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.2rem;
-    }
-    
-    .track-info h4 {
-      margin: 0 0 5px;
-      font-weight: 600;
-      color: var(--text);
-    }
-    
-    .track-info p {
-      margin: 0;
-      color: var(--text-light);
-      font-size: 0.9rem;
-    }
-    
-    /* 3. Para quem é */
-    .target-audience {
-      background: #fff8f0;
-      padding: 50px 0;
-    }
-    
-    .audience-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    
-    .audience-header h2 {
-      font-size: 2.2rem;
-      margin: 0 0 15px;
-      color: var(--text);
-    }
-    
-    .audience-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-    
-    .audience-card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: var(--shadow);
-      text-align: center;
-    }
-    
-    .audience-emoji {
-      font-size: 3rem;
-      margin-bottom: 15px;
-      display: block;
-    }
-    
-    /* 4. Produto por dentro */
-    .product-inside {
-      background: white;
-      padding: 60px 0;
-    }
-    
-    .inside-header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    
-    .inside-header h2 {
-      font-size: 2.5rem;
-      margin: 0 0 15px;
-      color: var(--text);
-    }
-    
-    .modules-grid {
-      display: grid;
-      gap: 25px;
-    }
-    
-    .module {
-      background: var(--card);
-      border: 2px solid var(--border);
-      border-radius: 15px;
-      padding: 25px;
-      transition: all 0.3s ease;
-    }
-    
-    .module:hover {
-      border-color: var(--primary);
-      box-shadow: var(--shadow-hover);
-      transform: translateY(-2px);
-    }
-    
-    .module-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
-    
-    .module-icon {
-      width: 50px;
-      height: 50px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.3rem;
-    }
-    
-    .module h3 {
-      margin: 0;
-      font-size: 1.3rem;
-      color: var(--text);
-    }
-    
-    .module-duration {
-      background: #f8f9fa;
-      padding: 4px 8px;
-      border-radius: 6px;
-      font-size: 0.8rem;
-      color: var(--text-light);
-      font-weight: 500;
-    }
-    
-    .module-content {
-      margin-left: 65px;
-    }
-    
-    .module-content p {
-      color: var(--text-light);
-      margin: 0 0 10px;
-    }
-    
-    .module-features {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .module-features li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 8px;
-      font-size: 0.9rem;
-    }
-    
-    .module-features li::before {
-      content: '✅';
-      font-size: 0.8rem;
-    }
-    
-    /* 5. O que vai receber */
-    .deliverables {
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      padding: 60px 0;
-    }
-    
-    .deliverables-header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    
-    .deliverables-header h2 {
-      font-size: 2.5rem;
-      margin: 0 0 15px;
-      color: var(--text);
-    }
-    
-    .deliverables-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-    
-    .deliverable {
-      background: white;
-      border-radius: 15px;
-      padding: 30px;
-      text-align: center;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .deliverable::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--primary), var(--warning));
-    }
-    
-    .deliverable-icon {
-      width: 70px;
-      height: 70px;
-      margin: 0 auto 20px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.8rem;
-    }
-    
-    .deliverable h3 {
-      margin: 0 0 10px;
-      font-size: 1.3rem;
-      color: var(--text);
-    }
-    
-    .deliverable-tag {
-      display: inline-block;
-      background: var(--warning);
-      color: white;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin-bottom: 15px;
-    }
-    
+    .header-bar { background: var(--primary); color: #fff; text-align: center; padding: 12px 20px; font-weight: 600; font-size: 0.9rem; }
+
+    /* 1. Primeira dobra (Venda imediata) */
+    .hero { background:#fff; padding:60px 0 40px; text-align:center; }
+    .headline { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 900; line-height: 1.1; margin: 0 0 18px; color: var(--text); }
+    .headline .highlight { color: var(--primary); position: relative; }
+    .headline .highlight::after { content:''; position:absolute; bottom:-6px; left:0; width:100%; height:4px; background: linear-gradient(90deg, var(--primary), var(--warning)); border-radius:2px; }
+    .subheadline { font-size:1.2rem; color:var(--text-light); margin-bottom:28px; font-weight:500; }
+    .hero-cta { margin: 34px 0; }
+
+    /* Demonstração do produto */
+    .product-demo { background:#fff; padding:60px 0; border-top:1px solid var(--border); }
+    .demo-grid { display:grid; grid-template-columns: 1.2fr 1fr; gap:34px; align-items:center; }
+    .demo-mockup { background: linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%); border-radius:20px; padding:24px; box-shadow:var(--shadow); }
+    .audio-player-mock { background:#fff; border-radius:14px; padding:16px; margin-bottom:14px; box-shadow:0 2px 10px rgba(0,0,0,.08); display:flex; align-items:center; gap:12px; }
+    .play-icon { width:48px; height:48px; background:var(--primary); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.1rem; }
+    .track-info h4 { margin:0 0 4px; font-weight:700; color:var(--text); }
+    .track-info p { margin:0; color:var(--text-light); font-size:.9rem; }
+
+    /* 3. Benefícios do produto (novo) */
+    .benefits { background:#fff; padding:50px 0; border-top:1px solid var(--border); }
+    .benefits h2 { font-size:2.2rem; margin:0 0 16px; }
+    .benefits-list { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:14px; list-style:none; padding:0; margin:0; }
+    .benefits-list li { background:#f9fafb; border:1px solid var(--border); border-radius:12px; padding:14px 16px; font-size:1rem; }
+
+    /* 4. Headline de urgência + CTA (meio da página) */
+    .mid-urgency { background: linear-gradient(135deg, #fff5f5 0%, #fff 100%); padding:46px 0; text-align:center; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+
+    /* Para quem é */
+    .target-audience { background:#fff8f0; padding:50px 0; }
+    .audience-header { text-align:center; margin-bottom:34px; }
+    .audience-header h2 { font-size:2.1rem; margin:0 0 10px; }
+    .audience-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:22px; }
+    .audience-card { background:#fff; padding:26px; border-radius:14px; box-shadow:var(--shadow); text-align:center; }
+    .audience-emoji { font-size:2.6rem; margin-bottom:10px; display:block; }
+
+    /* Como funciona (novo) */
+    .how-it-works { background:#f5f7fb; padding:60px 0; }
+    .steps { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:18px; }
+    .step { background:#fff; border:1px solid var(--border); border-radius:14px; padding:18px; box-shadow:var(--shadow); }
+    .step h3 { margin:0 0 4px; font-size:1.1rem; }
+
+    /* Produto por dentro (módulos) */
+    .product-inside { background:#fff; padding:60px 0; }
+    .inside-header { text-align:center; margin-bottom:40px; }
+    .inside-header h2 { font-size:2.3rem; margin:0 0 10px; }
+    .modules-grid { display:grid; gap:22px; }
+    .module { background:var(--card); border:2px solid var(--border); border-radius:15px; padding:22px; transition:.25s; }
+    .module:hover { border-color:var(--primary); box-shadow:var(--shadow-hover); transform: translateY(-2px); }
+    .module-header { display:flex; align-items:center; gap:12px; margin-bottom:10px; }
+    .module-icon { width:46px; height:46px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius:12px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.2rem; }
+    .module h3 { margin:0; font-size:1.2rem; }
+    .module-duration { background:#f8f9fa; padding:4px 8px; border-radius:6px; font-size:.78rem; color:var(--text-light); font-weight:600; }
+    .module-content { margin-left:60px; }
+    .module-content p { color:var(--text-light); margin:0 0 8px; }
+    .module-features { list-style:none; padding:0; margin:0; }
+    .module-features li { display:flex; align-items:center; gap:8px; margin-bottom:8px; font-size:.95rem; }
+    .module-features li::before { content:'✅'; font-size:.9rem; }
+
+    /* O que vai receber */
+    .deliverables { background: linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%); padding:60px 0; }
+    .deliverables-header { text-align:center; margin-bottom:40px; }
+    .deliverables-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:24px; }
+    .deliverable { background:#fff; border-radius:15px; padding:26px; text-align:center; box-shadow:var(--shadow); position:relative; overflow:hidden; }
+    .deliverable::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,var(--primary),var(--warning)); }
+    .deliverable-icon { width:64px; height:64px; margin:0 auto 14px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.5rem; }
+    .deliverable h3 { margin:0 0 8px; font-size:1.2rem; }
+    .deliverable-tag { display:inline-block; background:var(--warning); color:#fff; padding:4px 12px; border-radius:20px; font-size:.78rem; font-weight:700; margin-bottom:12px; }
+
+    /* Oferta (única – R$19,90) */
+    .offer-block { background:#fff; padding:60px 0; border-top:3px solid var(--primary); }
+    .offer-container { max-width:640px; margin:0 auto; text-align:center; }
+    .offer-header h2 { font-size:2.6rem; margin:0 0 16px; }
+    .price-container { background: linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%); border-radius:20px; padding:34px; margin:24px 0; border:2px solid var(--primary); position:relative; }
+    .price-tag { position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:var(--accent); color:#fff; padding:8px 18px; border-radius:22px; font-weight:800; font-size:.9rem; }
+    .price { font-size:3.4rem; font-weight:900; color:var(--primary); margin:0; line-height:1; }
+    .price-old { font-size:1.4rem; color:var(--text-light); text-decoration:line-through; margin-left:10px; opacity:.75; }
+    .price-installments { color:var(--text-light); margin-top:8px; font-size:1.05rem; }
+
+    /* FAQ */
+    .faq-section { background:#f8f9fa; padding:60px 0; }
+    .faq-header { text-align:center; margin-bottom:40px; }
+    .faq-header h2 { font-size:2.3rem; margin:0 0 10px; }
+    .faq-container { max-width:700px; margin:0 auto; }
+    .faq-item { background:#fff; border-radius:12px; margin-bottom:12px; box-shadow:var(--shadow); overflow:hidden; }
+    .faq-question { padding:22px; cursor:pointer; font-weight:700; font-size:1.05rem; display:flex; justify-content:space-between; align-items:center; transition:.25s; }
+    .faq-question:hover { background:#f2f4f7; }
+    .faq-icon { width:24px; height:24px; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-size:.9rem; transition: transform .3s; }
+    .faq-item.active .faq-icon { transform: rotate(45deg); }
+    .faq-answer { padding:0 22px 18px; color:var(--text-light); display:none; line-height:1.6; }
+    .faq-item.active .faq-answer { display:block; }
+
+    /* Garantia */
+    .guarantee-section { background: linear-gradient(135deg,#e8f5e8 0%, #f0f9ff 100%); padding:60px 0; }
+    .guarantee-container { max-width:600px; margin:0 auto; text-align:center; }
+    .guarantee-badge { width:90px; height:90px; background:var(--success); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; color:#fff; font-size:2.2rem; }
+    .guarantee-container h2 { font-size:2rem; margin:0 0 14px; }
+    .guarantee-text { font-size:1.1rem; color:var(--text-light); margin-bottom:20px; }
+
+    /* Urgência Final */
+    .urgency-section { background:var(--accent); color:#fff; padding:50px 0; text-align:center; }
+    .urgency-container h2 { font-size:2.3rem; margin:0 0 16px; font-weight:900; }
+    .urgency-text { font-size:1.2rem; margin-bottom:24px; opacity:.95; }
+
     /* Botões */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 18px 35px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 1.1rem;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      color: white;
-      box-shadow: 0 8px 25px rgba(0, 212, 170, 0.3);
-    }
-    
-    .btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 35px rgba(0, 212, 170, 0.4);
-    }
-    
-    .btn-primary::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-      transition: left 0.5s;
-    }
-    
-    .btn-primary:hover::before {
-      left: 100%;
-    }
-    
-    .btn-large {
-      font-size: 1.3rem;
-      padding: 22px 45px;
-    }
-    
-    /* 6. Bloco da oferta */
-    .offer-block {
-      background: white;
-      padding: 60px 0;
-      border-top: 3px solid var(--primary);
-    }
-    
-    .offer-container {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    
-    .offer-header h2 {
-      font-size: 2.8rem;
-      margin: 0 0 20px;
-      color: var(--text);
-    }
-    
-    .price-container {
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      border-radius: 20px;
-      padding: 40px;
-      margin: 30px 0;
-      border: 2px solid var(--primary);
-      position: relative;
-    }
-    
-    .price-tag {
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--accent);
-      color: white;
-      padding: 8px 20px;
-      border-radius: 25px;
-      font-weight: 700;
-      font-size: 0.9rem;
-    }
-    
-    .price {
-      font-size: 4rem;
-      font-weight: 900;
-      color: var(--primary);
-      margin: 0;
-      line-height: 1;
-    }
-    
-    .price-old {
-      font-size: 1.5rem;
-      color: var(--text-light);
-      text-decoration: line-through;
-      margin-left: 15px;
-      opacity: 0.7;
-    }
-    
-    .price-installments {
-      color: var(--text-light);
-      margin-top: 10px;
-      font-size: 1.1rem;
-    }
-    
-    /* 7. FAQ */
-    .faq-section {
-      background: #f8f9fa;
-      padding: 60px 0;
-    }
-    
-    .faq-header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    
-    .faq-header h2 {
-      font-size: 2.5rem;
-      margin: 0 0 15px;
-      color: var(--text);
-    }
-    
-    .faq-container {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    
-    .faq-item {
-      background: white;
-      border-radius: 12px;
-      margin-bottom: 15px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-    
-    .faq-question {
-      padding: 25px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 1.1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: all 0.3s ease;
-    }
-    
-    .faq-question:hover {
-      background: #f8f9fa;
-    }
-    
-    .faq-icon {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      transition: transform 0.3s ease;
-    }
-    
-    .faq-item.active .faq-icon {
-      transform: rotate(45deg);
-    }
-    
-    .faq-answer {
-      padding: 0 25px 25px;
-      color: var(--text-light);
-      display: none;
-      line-height: 1.6;
-    }
-    
-    .faq-item.active .faq-answer {
-      display: block;
-    }
-    
-    /* 8. Garantia */
-    .guarantee-section {
-      background: linear-gradient(135deg, #e8f5e8 0%, #f0f9ff 100%);
-      padding: 60px 0;
-    }
-    
-    .guarantee-container {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    
-    .guarantee-badge {
-      width: 100px;
-      height: 100px;
-      background: var(--success);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 25px;
-      color: white;
-      font-size: 2.5rem;
-    }
-    
-    .guarantee-container h2 {
-      font-size: 2.3rem;
-      margin: 0 0 20px;
-      color: var(--text);
-    }
-    
-    .guarantee-text {
-      font-size: 1.2rem;
-      color: var(--text-light);
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-    
-    /* 9. Urgência/Escassez */
-    .urgency-section {
-      background: var(--accent);
-      color: white;
-      padding: 50px 0;
-      text-align: center;
-    }
-    
-    .urgency-container h2 {
-      font-size: 2.5rem;
-      margin: 0 0 20px;
-      font-weight: 800;
-    }
-    
-    .urgency-text {
-      font-size: 1.3rem;
-      margin-bottom: 30px;
-      opacity: 0.95;
-    }
-    
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:16px 30px; border-radius:50px; font-weight:800; font-size:1.05rem; text-decoration:none; border:none; cursor:pointer; transition:.3s; position:relative; overflow:hidden; }
+    .btn-primary { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color:#fff; box-shadow: 0 8px 25px rgba(0,212,170,.28); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(0,212,170,.36); }
+    .btn-primary::before { content:''; position:absolute; top:0; left:-100%; width:100%; height:100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent); transition:left .5s; }
+    .btn-primary:hover::before { left:100%; }
+    .btn-large { font-size:1.22rem; padding:20px 40px; }
+    .pulse-glow { animation: pulseGlow 2s ease-in-out infinite; }
+
     /* Footer */
-    .footer {
-      background: var(--text);
-      color: #999;
-      padding: 40px 0;
-      text-align: center;
-    }
-    
+    .footer { background:var(--text); color:#999; padding:40px 0; text-align:center; }
+
     /* Responsivo */
     @media (max-width: 768px) {
-      .demo-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      
-      .audience-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .deliverables-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .headline {
-        font-size: 2.2rem;
-      }
-      
-      .price {
-        font-size: 3rem;
-      }
-      
-      .module-content {
-        margin-left: 0;
-        margin-top: 15px;
-      }
-      
-      .module-header {
-        flex-direction: column;
-        text-align: center;
-      }
+      .demo-grid { grid-template-columns:1fr; text-align:center; }
+      .audience-grid { grid-template-columns:1fr; }
+      .deliverables-grid { grid-template-columns:1fr; }
+      .headline { font-size:2.2rem; }
+      .price { font-size:2.8rem; }
+      .module-content { margin-left:0; margin-top:12px; }
+      .module-header { flex-direction:column; text-align:center; }
     }
-    
+
     /* Animações */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeInUp 0.8s ease forwards;
-    }
-    
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .pulse-glow {
-      animation: pulseGlow 2s ease-in-out infinite;
-    }
-    
+    .fade-in { opacity:0; transform: translateY(26px); animation: fadeInUp .8s ease forwards; }
+    @keyframes fadeInUp { to { opacity:1; transform: translateY(0); } }
     @keyframes pulseGlow {
-      0%, 100% {
-        box-shadow: 0 8px 25px rgba(0, 212, 170, 0.3);
-      }
-      50% {
-        box-shadow: 0 12px 35px rgba(0, 212, 170, 0.6);
-      }
+      0%,100% { box-shadow: 0 8px 25px rgba(0,212,170,.28); }
+      50% { box-shadow: 0 12px 35px rgba(0,212,170,.58); }
     }
   </style>
 </head>
@@ -701,16 +195,15 @@
     ⚡ +2.847 pessoas já transformaram o hábito de academia com este método
   </div>
 
-  <!-- 1. HEADLINE CLARA E ESPECÍFICA -->
+  <!-- 1) VENDA IMEDIATA (Primeira dobra) -->
   <section class="hero">
     <div class="container">
       <h1 class="headline">
-        O Sistema de Áudio que Faz Você <span class="highlight">QUERER</span> Ir à Academia 3x por Semana
+        Pare de Pagar Academia à Toa: Método Hipnótico para <span class="highlight">QUERER</span> Treinar <strong>3x/semana</strong>
       </h1>
       <p class="subheadline">
-        <strong>Para quem já paga mensalidade mas não consegue ser consistente</strong> — em 15 minutos por dia você programa sua mente para treinar no automático
+        Para quem paga mensalidade e some depois de 2 semanas: programe sua mente para <strong>vestir a roupa e ir</strong> — sem brigar com força de vontade.
       </p>
-      
       <div class="hero-cta">
         <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
            class="btn btn-primary btn-large pulse-glow"
@@ -718,21 +211,20 @@
           💪 Quero Treinar 3x por Semana
         </a>
       </div>
+      <img src="https://raw.githubusercontent.com/appestoicismo/habitoacademia/refs/heads/main/homehabitoacademia.png" alt="Mockup do Sistema de Áudios" style="width:100%; max-width:820px; border-radius:16px; box-shadow:var(--shadow);">
     </div>
   </section>
 
-  <!-- 2. DEMONSTRATIVO DO PRODUTO -->
+  <!-- 2) DEMONSTRATIVO DO PRODUTO -->
   <section class="product-demo">
     <div class="container">
       <div class="demo-grid">
         <div>
-          <h2 style="font-size: 2.3rem; margin-bottom: 25px; color: var(--text);">
-            Veja exatamente o que você vai receber:
-          </h2>
-          <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 30px;">
-            Não é mais um curso genérico. É um <strong>sistema específico</strong> de áudios hipnóticos para você criar o hábito de academia sem brigar com a força de vontade.
+          <h2 style="font-size: 2.1rem; margin-bottom: 18px; color: var(--text);">Veja exatamente o que você vai receber</h2>
+          <p style="font-size: 1.05rem; color: var(--text-light); margin-bottom: 22px;">
+            Não é curso genérico. É um <strong>método</strong> hipnótico para você criar consistência sem depender de “vontade”.
           </p>
-          <img src="https://via.placeholder.com/500x300/f8f9fa/333?text=Preview+do+Material" alt="Preview do material" style="width: 100%; border-radius: 15px; box-shadow: var(--shadow);">
+          <img src="https://raw.githubusercontent.com/appestoicismo/habitoacademia/refs/heads/main/habitoacademia5.jpg" alt="Preview do material" style="width: 100%; border-radius: 14px; box-shadow: var(--shadow);">
         </div>
         <div class="demo-mockup">
           <div class="audio-player-mock">
@@ -742,24 +234,21 @@
               <p>20min • Indução + Sugestões Hipnóticas</p>
             </div>
           </div>
-          
           <div class="audio-player-mock">
             <div class="play-icon">⚡</div>
             <div class="track-info">
-              <h4>Pré-Treino Turbo</h4>
-              <p>5min • Impulso Imediato</p>
+              <h4>Diário de Bordo</h4>
+              <p>2min • Registre suas impressões do treino</p>
             </div>
           </div>
-          
           <div class="audio-player-mock">
             <div class="play-icon">🌙</div>
             <div class="track-info">
-              <h4>Noturno — Consolidação</h4>
+              <h4>Objetivo do Treino</h4>
               <p>10min • Visualização + Reforço</p>
             </div>
           </div>
-          
-          <div style="background: white; border-radius: 12px; padding: 15px; margin-top: 15px; text-align: center; border: 2px dashed var(--primary);">
+          <div style="background:#fff; border-radius:12px; padding:14px; margin-top:12px; text-align:center; border:2px dashed var(--primary);">
             <strong>+ Guia PDF + Checklist de 30 dias</strong>
           </div>
         </div>
@@ -767,46 +256,96 @@
     </div>
   </section>
 
-  <!-- 3. PARA QUEM É -->
+  <!-- 3) BENEFÍCIOS DO PRODUTO (novo) -->
+  <section class="benefits">
+    <div class="container">
+      <h2>Benefícios práticos que você sente na rotina</h2>
+      <ul class="benefits-list">
+        <li>✅ <strong>Fim da enrolação:</strong> você levanta e vai.</li>
+        <li>✅ <strong>Gatilho automático:</strong> vestiu a roupa, o corpo já vai.</li>
+        <li>✅ <strong>Consistência real:</strong> 3x/semana sem depender de “motivação”.</li>
+        <li>✅ <strong>Identidade ativa:</strong> você se enxerga como pessoa que treina.</li>
+        <li>✅ <strong>Pré-treino relâmpago:</strong> 5min para cortar desculpas.</li>
+        <li>✅ <strong>Noite que prepara o dia:</strong> acorde já pensando no treino.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4) HEADLINE DE URGÊNCIA + BOTÃO (meio da página – novo) -->
+  <section class="mid-urgency">
+    <div class="container">
+      <h2 style="margin:0 0 10px; font-size:2rem; font-weight:900;">Acesse hoje e comece ainda nesta noite</h2>
+      <p style="color:var(--text-light); margin:0 0 18px;">Liberação imediata • Passo a passo simples • Resultados em 3–7 dias</p>
+      <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
+         class="btn btn-primary"
+         onclick="fbq('track', 'InitiateCheckout', {value: 19.90, currency: 'BRL'});">
+        🔓 Liberar meu acesso agora
+      </a>
+    </div>
+  </section>
+
+  <!-- 5) PARA QUEM É -->
   <section class="target-audience">
     <div class="container">
       <div class="audience-header">
         <h2>Este sistema foi criado especificamente para:</h2>
-        <p style="font-size: 1.2rem; color: var(--text-light);">Se você se identifica com qualquer um desses perfis, este método vai funcionar para você</p>
+        <p style="font-size:1.05rem; color:var(--text-light);">Se você se identifica com qualquer um desses perfis, este método vai funcionar para você.</p>
       </div>
-      
       <div class="audience-grid">
-        <div class="audience-card">
+        <div class="audience-card fade-in">
           <span class="audience-emoji">😤</span>
           <h3>Quem já pagou academia e não vai</h3>
-          <p>Você se matricula animado, mas depois de 2 semanas já está inventando desculpas e pagando à toa</p>
+          <p>Se matricula animado e, 2 semanas depois, começa a inventar desculpas.</p>
         </div>
-        
-        <div class="audience-card">
+        <div class="audience-card fade-in">
           <span class="audience-emoji">🔄</span>
-          <h3>Quem sempre "vai começar na segunda"</h3>
-          <p>Vive planejando começar a treinar, mas quando chega a hora, sempre aparece algo "mais importante"</p>
+          <h3>Quem sempre “vai começar na segunda”</h3>
+          <p>Planeja treinar, mas na hora H aparece algo “mais importante”.</p>
         </div>
-        
-        <div class="audience-card">
+        <div class="audience-card fade-in">
           <span class="audience-emoji">⚡</span>
           <h3>Quem quer consistência, não perfeição</h3>
-          <p>Não precisa virar atleta. Só quer criar o hábito sólido de ir à academia 3x por semana e manter</p>
+          <p>Sem virar atleta. É criar o hábito sólido de ir 3x/semana e manter.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. PRODUTO POR DENTRO -->
+  <!-- 6) COMO FUNCIONA (novo) -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 style="font-size:2.2rem; margin:0 0 12px;">Como funciona</h2>
+      <p style="color:var(--text-light); margin:0 0 22px;">Tangível e simples. Não é curso: é ouvir e agir.</p>
+      <div class="steps">
+        <div class="step">
+          <h3>1) Baixe</h3>
+          <p>Acesso imediato ao aplicativo e todas as ferramentas.</p>
+        </div>
+        <div class="step">
+          <h3>2) Ouça</h3>
+          <p>Áudio Principal (20min) por 7 dias seguidos.</p>
+        </div>
+        <div class="step">
+          <h3>3) Treine</h3>
+          <p>Registre suas impressões do treino.</p>
+        </div>
+        <div class="step">
+          <h3>4) Consolide</h3>
+          <p>Acesse seu objetivo e mantenha a motivação real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) PRODUTO POR DENTRO (módulos) -->
   <section class="product-inside">
     <div class="container">
       <div class="inside-header">
-        <h2>Por dentro do sistema:</h2>
-        <p style="font-size: 1.2rem; color: var(--text-light);">Cada áudio foi desenvolvido com base em técnicas comprovadas de programação mental e criação de hábitos</p>
+        <h2>Por dentro do sistema</h2>
+        <p style="font-size:1.05rem; color:var(--text-light);">Áudios e materiais baseados em técnicas de criação de hábitos e programação mental.</p>
       </div>
-      
       <div class="modules-grid">
-        <div class="module">
+        <div class="module fade-in">
           <div class="module-header">
             <div class="module-icon">🎧</div>
             <div>
@@ -815,18 +354,17 @@
             </div>
           </div>
           <div class="module-content">
-            <p><strong>O coração do sistema.</strong> Indução relaxante seguida de sugestões hipnóticas específicas para criar o impulso de ir à academia.</p>
+            <p><strong>Coração do sistema.</strong> Indução relaxante + sugestões hipnóticas para criar impulso de ir à academia.</p>
             <ul class="module-features">
-              <li>Técnica de relaxamento progressivo</li>
-              <li>Programação mental para vencer a resistência</li>
-              <li>Âncora mental para vestir a roupa de treino</li>
-              <li>Sugestões pós-hipnóticas para consistência</li>
-              <li>Reforço da identidade de "pessoa que treina"</li>
+              <li>Relaxamento progressivo</li>
+              <li>Programação para vencer resistência</li>
+              <li>Âncora para vestir a roupa de treino</li>
+              <li>Sugestões pós-hipnóticas de consistência</li>
+              <li>Identidade de “pessoa que treina”</li>
             </ul>
           </div>
         </div>
-        
-        <div class="module">
+        <div class="module fade-in">
           <div class="module-header">
             <div class="module-icon">⚡</div>
             <div>
@@ -835,17 +373,15 @@
             </div>
           </div>
           <div class="module-content">
-            <p><strong>Para os dias de treino.</strong> Impulso imediato para você amarrar o tênis e sair de casa sem enrolação.</p>
+            <p><strong>Nos dias de treino.</strong> Impulso imediato para amarrar o tênis e sair de casa.</p>
             <ul class="module-features">
-              <li>Ativação do sistema nervoso</li>
+              <li>Ativação e foco no “agora”</li>
               <li>Afirmações energizantes</li>
-              <li>Eliminação de desculpas mentais</li>
-              <li>Foco no "agora" em vez do "depois"</li>
+              <li>Corte de desculpas mentais</li>
             </ul>
           </div>
         </div>
-        
-        <div class="module">
+        <div class="module fade-in">
           <div class="module-header">
             <div class="module-icon">🌙</div>
             <div>
@@ -854,17 +390,16 @@
             </div>
           </div>
           <div class="module-content">
-            <p><strong>Antes de dormir.</strong> Visualização do próximo treino para que sua mente subconsciente trabalhe durante o sono.</p>
+            <p><strong>Antes de dormir.</strong> Visualização do próximo treino para o subconsciente trabalhar durante o sono.</p>
             <ul class="module-features">
-              <li>Visualização guiada do treino seguinte</li>
-              <li>Reforço dos benefícios conquistados</li>
+              <li>Visualização guiada</li>
+              <li>Reforço de benefícios</li>
               <li>Programação para acordar motivado</li>
-              <li>Consolidação neural do hábito</li>
+              <li>Consolidação neural</li>
             </ul>
           </div>
         </div>
-        
-        <div class="module">
+        <div class="module fade-in">
           <div class="module-header">
             <div class="module-icon">📋</div>
             <div>
@@ -873,394 +408,284 @@
             </div>
           </div>
           <div class="module-content">
-           <p><strong>Material de apoio essencial.</strong> Guia PDF completo + checklist imprimível para acompanhar seu progresso nos primeiros 30 dias.</p>
-           <ul class="module-features">
-             <li>Guia de uso dos áudios (quando e como ouvir)</li>
-             <li>Checklist de 30 dias para marcar os treinos</li>
-             <li>Dicas para potencializar os resultados</li>
-             <li>Como superar os obstáculos mais comuns</li>
-             <li>Estratégias para manter o hábito a longo prazo</li>
-           </ul>
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
+            <p><strong>Essencial.</strong> Transforme Dever em Prazer</p>
+            <ul class="module-features">
+              <li>Mude sua mentalidade</li>
+              <li>O custo oculto do dever</li>
+              <li>O poder do prezer no processo</li>
+              <li>Transforme sua mentalidade, transforme seus resultados</li>
+              <li>Como a hipnose atua no cérebro</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <!-- 5. O QUE VAI RECEBER -->
- <section class="deliverables">
-   <div class="container">
-     <div class="deliverables-header">
-       <h2>Resumo: tudo o que você leva hoje</h2>
-       <p style="font-size: 1.2rem; color: var(--text-light);">Acesso imediato após a compra. Downloads diretos no seu email.</p>
-     </div>
-     
-     <div class="deliverables-grid">
-       <div class="deliverable">
-         <div class="deliverable-icon">🎧</div>
-         <div class="deliverable-tag">PRINCIPAL</div>
-         <h3>Áudio Hipnótico 20min</h3>
-         <p>Programação mental completa para criar o hábito de ir à academia 3x por semana</p>
-         <img src="https://via.placeholder.com/200x120/00d4aa/ffffff?text=Audio+Principal" alt="Áudio principal" style="width: 100%; border-radius: 8px; margin-top: 15px;">
-       </div>
-       
-       <div class="deliverable">
-         <div class="deliverable-icon">⚡</div>
-         <div class="deliverable-tag">BÔNUS #1</div>
-         <h3>Pré-Treino 5min</h3>
-         <p>Impulso imediato para sair de casa e ir treinar nos dias certos</p>
-         <img src="https://via.placeholder.com/200x120/ffa502/ffffff?text=Pre-Treino" alt="Pré-treino" style="width: 100%; border-radius: 8px; margin-top: 15px;">
-       </div>
-       
-       <div class="deliverable">
-         <div class="deliverable-icon">🌙</div>
-         <div class="deliverable-tag">BÔNUS #2</div>
-         <h3>Noturno 10min</h3>
-         <p>Visualização antes de dormir para consolidar o hábito</p>
-         <img src="https://via.placeholder.com/200x120/5f27cd/ffffff?text=Noturno" alt="Áudio noturno" style="width: 100%; border-radius: 8px; margin-top: 15px;">
-       </div>
-       
-       <div class="deliverable">
-         <div class="deliverable-icon">📋</div>
-         <div class="deliverable-tag">BÔNUS #3</div>
-         <h3>Guia + Checklist</h3>
-         <p>PDF completo + checklist de 30 dias para acompanhar seu progresso</p>
-         <img src="https://via.placeholder.com/200x120/ff6b6b/ffffff?text=Guia+PDF" alt="Guia PDF" style="width: 100%; border-radius: 8px; margin-top: 15px;">
-       </div>
-     </div>
-     
-     <div style="text-align: center; margin-top: 40px;">
-       <p style="font-size: 1.3rem; color: var(--text); font-weight: 600;">
-         <strong>Valor total se vendido separadamente: R$ 197,00</strong>
-       </p>
-       <p style="font-size: 1.1rem; color: var(--text-light);">
-         Mas hoje você leva tudo isso por um preço especial ⬇️
-       </p>
-     </div>
-   </div>
- </section>
+  <!-- 8) O QUE VAI RECEBER -->
+  <section class="deliverables">
+    <div class="container">
+      <div class="deliverables-header">
+        <h2>Resumo: tudo o que você leva hoje</h2>
+        <p style="font-size:1.05rem; color:var(--text-light);">Acesso imediato após a compra. Downloads no seu e-mail.</p>
+      </div>
+      <div class="deliverables-grid">
+        <div class="deliverable fade-in">
+          <div class="deliverable-icon">🎧</div>
+          <div class="deliverable-tag">PRINCIPAL</div>
+          <h3>Áudio Hipnótico 20min</h3>
+          <p>Programação mental para criar o hábito de treinar 3x/semana.</p>
+          <img src="https://raw.githubusercontent.com/appestoicismo/habitoacademia/refs/heads/main/audio1.png" alt="Áudio principal" style="width:100%; border-radius:10px; margin-top:12px;">
+        </div>
+        <div class="deliverable fade-in">
+          <div class="deliverable-icon">⚡</div>
+          <div class="deliverable-tag">BÔNUS</div>
+          <h3>Diário de Bordo</h3>
+          <p>Registre suas impressões após o treino</p>
+          <img src="https://raw.githubusercontent.com/appestoicismo/habitoacademia/refs/heads/main/diariodebordo2.png" alt="Pré-treino" style="width:100%; border-radius:10px; margin-top:12px;">
+        </div>
+        <div class="deliverable fade-in">
+          <div class="deliverable-icon">🌙</div>
+          <div class="deliverable-tag">BÔNUS</div>
+          <h3>Objetivo do Treino</h3>
+          <p>Visualização antes de dormir para consolidar o hábito.</p>
+          <img src="https://raw.githubusercontent.com/appestoicismo/habitoacademia/refs/heads/main/opd1.png" alt="Sistema noturno" style="width:100%; border-radius:10px; margin-top:12px;">
+        </div>
+        <div class="deliverable fade-in">
+          <div class="deliverable-icon">📋</div>
+          <div class="deliverable-tag">BÔNUS</div>
+          <h3>Guia completo</h3>
+          <p>Transformando o "dever" em "prazer".</p>
+          <img src="https://raw.githubusercontent.com/appestoicismo/habitoacademia/refs/heads/main/ebook1.png" alt="Guia PDF" style="width:100%; border-radius:10px; margin-top:12px;">
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:26px;">
+        <p style="font-size:1.15rem; color:var(--text); font-weight:700;"><strong>Valor total se vendido separadamente: R$ 197,00</strong></p>
+        <p style="font-size:1rem; color:var(--text-light);">Mas hoje você leva tudo isso por um preço especial ⬇️</p>
+      </div>
+    </div>
+  </section>
 
- <!-- 6. BLOCO DA OFERTA -->
- <section class="offer-block">
-   <div class="container">
-     <div class="offer-container">
-       <div class="offer-header">
-         <h2>Oferta Especial</h2>
-       </div>
-       
-       <div class="price-container">
-         <div class="price-tag">🔥 PROMOÇÃO</div>
-         <p style="margin: 0 0 10px; color: var(--text-light); font-size: 1.1rem;">De R$ 197,00 por apenas:</p>
-         <div>
-           <span class="price">R$ 19,90</span>
-           <span class="price-old">R$ 197,00</span>
-         </div>
-         <p class="price-installments">
-           ou <strong>3x de R$ 6,63</strong> no cartão
-         </p>
-         
-         <div style="margin: 30px 0;">
-           <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
-              class="btn btn-primary btn-large pulse-glow"
-              onclick="fbq('track', 'AddToCart', {value: 19.90, currency: 'BRL'});">
-             💳 Garantir Acesso Agora
-           </a>
-         </div>
-         
-         <div style="color: var(--text-light); font-size: 0.95rem; margin-top: 15px;">
-           🔒 <strong>Compra 100% segura</strong><br>
-           ⚡ <strong>Acesso imediato</strong> após aprovação<br>
-           📧 Links de download enviados por email
-         </div>
-       </div>
-       
-       <div style="background: #e8f5e8; padding: 20px; border-radius: 12px; margin-top: 30px;">
-         <h4 style="margin: 0 0 10px; color: var(--success);">🎁 BÔNUS EXCLUSIVO PARA HOJE:</h4>
-         <p style="margin: 0; color: var(--text-light);">
-           <strong>"Checklist Definitivo de Preparação"</strong> — 15 dicas práticas para se preparar mentalmente antes de cada treino
-         </p>
-       </div>
-     </div>
-   </div>
- </section>
+  <!-- 9) OFERTA ÚNICA — R$ 19,90 -->
+  <section class="offer-block">
+    <div class="container">
+      <div class="offer-container">
+        <div class="offer-header">
+          <h2>Oferta Especial</h2>
+        </div>
+        <div class="price-container">
+          <div class="price-tag">🔥 PROMOÇÃO</div>
+          <p style="margin:0 0 8px; color:var(--text-light); font-size:1rem;">De R$ 197,00 por apenas:</p>
+          <div>
+            <span class="price">R$ 19,90</span>
+            <span class="price-old">R$ 197,00</span>
+          </div>
+          <p class="price-installments">ou <strong>4x de R$ 5,42</strong> no cartão</p>
+          <div style="margin: 24px 0;">
+            <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
+               class="btn btn-primary btn-large pulse-glow"
+               onclick="fbq('track', 'AddToCart', {value: 19.90, currency: 'BRL'});">
+              💳 Garantir Acesso Agora
+            </a>
+          </div>
+          <div style="color:var(--text-light); font-size:.95rem;">
+            🔒 <strong>Compra 100% segura</strong><br>
+            ⚡ <strong>Acesso imediato</strong> após aprovação<br>
+            📧 Links de download enviados por e-mail
+          </div>
+        </div>
+        <div style="background:#e8f5e8; padding:18px; border-radius:12px; margin-top:22px;">
+          <h4 style="margin:0 0 8px; color:var(--success);">🎁 BÔNUS EXCLUSIVO PARA HOJE</h4>
+          <p style="margin:0; color:var(--text-light);"><strong>"Checklist Definitivo de Preparação"</strong> — 15 dicas práticas para se preparar mentalmente antes de cada treino</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <!-- 7. FAQ -->
- <section class="faq-section">
-   <div class="container">
-     <div class="faq-header">
-       <h2>Perguntas mais frequentes</h2>
-       <p style="color: var(--text-light); font-size: 1.1rem;">Tire suas dúvidas antes de garantir seu acesso</p>
-     </div>
-     
-     <div class="faq-container">
-       <div class="faq-item">
-         <div class="faq-question" onclick="toggleFaq(this)">
-           🧠 Hipnose é segura? Vou perder o controle?
-           <div class="faq-icon">+</div>
-         </div>
-         <div class="faq-answer">
-           <p>Hipnose é apenas um estado de relaxamento profundo e foco direcionado. Você permanece consciente o tempo todo e pode parar quando quiser. É como uma meditação guiada. Milhões de pessoas usam hipnose para criar hábitos positivos. <strong>Não use enquanto dirige ou opera máquinas.</strong></p>
-         </div>
-       </div>
-       
-       <div class="faq-item">
-         <div class="faq-question" onclick="toggleFaq(this)">
-           ⏰ Em quanto tempo vou ver resultado?
-           <div class="faq-icon">+</div>
-         </div>
-         <div class="faq-answer">
-           <p>A maioria das pessoas percebe mudança na <strong>motivação em 3-7 dias</strong> de uso. O hábito sólido se forma entre 21-30 dias de repetição. Alguns sentem o impulso de treinar já na primeira semana. O importante é usar consistentemente por pelo menos 2 semanas.</p>
-         </div>
-       </div>
-       
-       <div class="faq-item">
-         <div class="faq-question" onclick="toggleFaq(this)">
-           🏋️ Preciso já estar treinando para usar?
-           <div class="faq-icon">+</div>
-         </div>
-         <div class="faq-answer">
-           <p><strong>Não!</strong> O sistema foi criado exatamente para quem tem dificuldade de começar ou manter consistência. Funciona tanto para iniciantes quanto para quem já treina mas quer ser mais regular. É para criar o hábito de ir 3x por semana.</p>
-         </div>
-       </div>
-       
-       <div class="faq-item">
-         <div class="faq-question" onclick="toggleFaq(this)">
-           📱 Como recebo o material?
-           <div class="faq-icon">+</div>
-         </div>
-         <div class="faq-answer">
-           <p>Após a compra aprovada, você recebe <strong>imediatamente por email</strong> os links para download dos áudios MP3 e do PDF. Funcionam em qualquer celular, computador ou tablet. Você pode ouvir offline após baixar.</p>
-         </div>
-       </div>
-       
-       <div class="faq-item">
-         <div class="faq-question" onclick="toggleFaq(this)">
-           🎧 Que horário é melhor para ouvir?
-           <div class="faq-icon">+</div>
-         </div>
-         <div class="faq-answer">
-           <p><strong>Áudio principal:</strong> Manhã ao acordar ou noite antes de dormir. <strong>Pré-treino:</strong> 15-30 minutos antes de ir à academia. <strong>Noturno:</strong> Na cama, antes de adormecer. Tudo explicado no guia que acompanha.</p>
-         </div>
-       </div>
-       
-       <div class="faq-item">
-         <div class="faq-question" onclick="toggleFaq(this)">
-           💰 E se eu não gostar ou não funcionar?
-           <div class="faq-icon">+</div>
-         </div>
-         <div class="faq-answer">
-           <p><strong>Garantia total de 7 dias.</strong> Se por qualquer motivo você não gostar do material ou não sentir nenhuma mudança, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. Basta enviar um email.</p>
-         </div>
-       </div>
-       
-       <div class="faq-item">
-         <div class="faq-question" onclick="toggleFaq(this)">
-           🏃‍♀️ Funciona para outras atividades além da academia?
-           <div class="faq-icon">+</div>
-         </div>
-         <div class="faq-answer">
-           <p>O sistema foi criado especificamente para academia, mas os princípios funcionam para qualquer atividade física regular: corrida, natação, crossfit, etc. O importante é ter uma atividade definida para fazer 3x por semana.</p>
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
+  <!-- 10) FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-header">
+        <h2>Perguntas mais frequentes</h2>
+        <p style="color:var(--text-light); font-size:1rem;">Tire suas dúvidas antes de garantir seu acesso</p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">🧠 Hipnose é segura? Vou perder o controle?<div class="faq-icon">+</div></div>
+          <div class="faq-answer">
+            <p>Hipnose é um estado de relaxamento profundo e foco. Você permanece consciente e pode parar quando quiser — como uma meditação guiada. <strong>Não use enquanto dirige.</strong></p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">⏰ Em quanto tempo vou ver resultado?<div class="faq-icon">+</div></div>
+          <div class="faq-answer">
+            <p>A maioria percebe mudança na <strong>motivação em 3–7 dias</strong>. O hábito sólido se forma entre 21–30 dias. O importante é usar por pelo menos 2 semanas.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">🏋️ Preciso já estar treinando para usar?<div class="faq-icon">+</div></div>
+          <div class="faq-answer">
+            <p><strong>Não.</strong> Foi criado para quem tem dificuldade de começar ou manter consistência. Serve para iniciantes e para quem quer regularidade 3x/semana.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">📱 Como recebo o material?<div class="faq-icon">+</div></div>
+          <div class="faq-answer">
+            <p>Após a compra aprovada, você recebe <strong>imediatamente por e-mail</strong> os links para baixar os áudios (MP3) e o PDF. Funciona em qualquer celular/computador.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">🎧 Que horário é melhor para ouvir?<div class="faq-icon">+</div></div>
+          <div class="faq-answer">
+            <p><strong>Principal:</strong> manhã ou noite. <strong>Pré-treino:</strong> 15–30min antes de ir. <strong>Noturno:</strong> na cama, antes de dormir. Tudo explicado no guia.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">💰 E se eu não gostar ou não funcionar?<div class="faq-icon">+</div></div>
+          <div class="faq-answer">
+            <p><strong>Garantia total de 7 dias.</strong> Se não sentir nenhuma mudança ou não gostar, devolvemos 100% do dinheiro. Sem perguntas. É só enviar um e-mail.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">🏃‍♀️ Funciona para outras atividades além da academia?<div class="faq-icon">+</div></div>
+          <div class="faq-answer">
+            <p>Foi pensado para academia, mas os princípios servem para corrida, natação, crossfit e outras atividades fixas 3x/semana.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <!-- 8. GARANTIA -->
- <section class="guarantee-section">
-   <div class="container">
-     <div class="guarantee-container">
-       <div class="guarantee-badge">🛡️</div>
-       <h2>Garantia Incondicional de 7 Dias</h2>
-       <p class="guarantee-text">
-         Experimente o sistema por 7 dias completos. Se não sentir nenhuma mudança na sua motivação para treinar, ou se por qualquer motivo não gostar do material, eu devolvo 100% do seu investimento.
-       </p>
-       <p style="color: var(--text); font-weight: 600; font-size: 1.1rem;">
-         Sem perguntas. Sem burocracia. Sem letras miúdas.
-       </p>
-       
-       <div style="margin-top: 30px;">
-         <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
-            class="btn btn-primary btn-large"
-            onclick="fbq('track', 'InitiateCheckout', {value: 19.90, currency: 'BRL'});">
-           🛡️ Garantir com Segurança Total
-         </a>
-       </div>
-     </div>
-   </div>
- </section>
+  <!-- 11) GARANTIA -->
+  <section class="guarantee-section">
+    <div class="container">
+      <div class="guarantee-container">
+        <div class="guarantee-badge">🛡️</div>
+        <h2>Garantia Incondicional de 7 Dias</h2>
+        <p class="guarantee-text">Teste por 7 dias completos. Se não sentir nenhuma mudança na sua motivação para treinar — ou se não gostar do material — devolvemos 100%.</p>
+        <p style="color:var(--text); font-weight:700; font-size:1rem;">Sem perguntas. Sem burocracia. Sem letras miúdas.</p>
+        <div style="margin-top:16px;">
+          <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
+             class="btn btn-primary"
+             onclick="fbq('track', 'InitiateCheckout', {value: 19.90, currency: 'BRL'});">
+            🛡️ Garantir com Segurança Total
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <!-- 9. URGÊNCIA/ESCASSEZ -->
- <section class="urgency-section">
-   <div class="container">
-     <div class="urgency-container">
-       <h2>Última chamada!</h2>
-       <p class="urgency-text">
-         Pare de postergar. Pare de pagar academia à toa. <strong>Sua transformação começa hoje.</strong>
-       </p>
-       <p style="font-size: 1.1rem; margin-bottom: 35px;">
-         Mais de 2.800 pessoas já mudaram seus hábitos com este sistema.<br>
-         <strong>Agora é sua vez.</strong>
-       </p>
-       
-       <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
-          class="btn btn-primary btn-large pulse-glow"
-          style="background: white; color: var(--accent); font-size: 1.4rem;"
-          onclick="fbq('track', 'Purchase', {value: 19.90, currency: 'BRL'});">
-         💪 SIM! Quero Treinar 3x por Semana
-       </a>
-       
-       <div style="margin-top: 25px; font-size: 0.9rem; opacity: 0.9;">
-         <p>⚡ Acesso imediato • 🔒 Compra segura • ✅ Garantia de 7 dias</p>
-         <p><strong>Investimento: apenas R$ 19,90</strong> (menos que uma mensalidade de academia)</p>
-       </div>
-     </div>
-   </div>
- </section>
+  <!-- 12) URGÊNCIA/ESCASSEZ FINAL -->
+  <section class="urgency-section">
+    <div class="container">
+      <div class="urgency-container">
+        <h2>Última chamada!</h2>
+        <p class="urgency-text">Pare de postergar. Pare de pagar academia à toa. <strong>Sua transformação começa hoje.</strong></p>
+        <p style="font-size:1rem; margin-bottom:24px;">Mais de 2.800 pessoas já mudaram seus hábitos com este sistema.<br><strong>Agora é sua vez.</strong></p>
+        <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
+           class="btn btn-primary btn-large pulse-glow"
+           style="background:#fff; color:var(--accent);"
+           onclick="fbq('track', 'InitiateCheckout', {value: 19.90, currency: 'BRL'});">
+          💪 SIM! Quero Treinar 3x por Semana
+        </a>
+        <div style="margin-top:18px; font-size:.9rem; opacity:.95;">
+          <p>⚡ Acesso imediato • 🔒 Compra segura • ✅ Garantia de 7 dias</p>
+          <p><strong>Investimento: R$ 19,90</strong> (menos que uma mensalidade de academia)</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <!-- CTA Final Fixo -->
- <div style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--primary); padding: 15px 20px; box-shadow: 0 -2px 20px rgba(0,0,0,0.1); z-index: 1000; display: none;" id="stickyBar">
-   <div style="display: flex; align-items: center; justify-content: space-between; max-width: 800px; margin: 0 auto;">
-     <div style="color: white;">
-       <strong style="font-size: 1.1rem;">R$ 19,90</strong>
-       <div style="font-size: 0.9rem; opacity: 0.9;">Sistema completo • 3 bônus</div>
-     </div>
-     <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
-        class="btn"
-        style="background: white; color: var(--primary); padding: 12px 25px; font-size: 1rem;"
-        onclick="fbq('track', 'Purchase', {value: 19.90, currency: 'BRL'});">
-       Garantir Agora
-     </a>
-   </div>
- </div>
+  <!-- CTA Final Fixo (sticky) -->
+  <div style="position:fixed; bottom:0; left:0; right:0; background:var(--primary); padding:14px 16px; box-shadow:0 -2px 20px rgba(0,0,0,.1); z-index:1000; display:none;" id="stickyBar">
+    <div style="display:flex; align-items:center; justify-content:space-between; max-width:800px; margin:0 auto;">
+      <div style="color:#fff;">
+        <strong style="font-size:1.05rem;">R$ 19,90</strong>
+        <div style="font-size:.88rem; opacity:.9;">Sistema completo • 3 bônus</div>
+      </div>
+      <a href="https://pay.kiwify.com.br/bnMAMfH?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" 
+         class="btn"
+         style="background:#fff; color:var(--primary); padding:10px 22px; font-size:.98rem;"
+         onclick="fbq('track', 'AddToCart', {value: 19.90, currency: 'BRL'});">
+        Garantir Agora
+      </a>
+    </div>
+  </div>
 
- <!-- Footer -->
- <footer class="footer">
-   <div class="container">
-     <p>&copy; 2025 Pare de Pagar Academia à Toa. Todos os direitos reservados.</p>
-     <p style="font-size: 0.8rem; margin-top: 15px; opacity: 0.7;">
-       Este é um produto digital. Não substitui orientação médica ou psicológica profissional.<br>
-       Resultados podem variar de pessoa para pessoa.
-     </p>
-   </div>
- </footer>
+  <!-- Footer (com suporte + CNPJ) -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Pare de Pagar Academia à Toa. Todos os direitos reservados.</p>
+      <p style="font-size:0.9rem; margin:8px 0;">Suporte: <a href="mailto:contato@seudominio.com" style="color:#bbb;">contato@appestoicismo.com.br</a></p>
+      <p style="font-size:0.9rem; margin:8px 0;">CNPJ: 40.678.175/0001-77 — AppAutoHipnose</p>
+      <p style="font-size:0.8rem; margin-top:10px; opacity:.75;">
+        Este é um produto digital. Não substitui orientação médica ou psicológica profissional. Resultados podem variar.
+      </p>
+      <p style="font-size:0.8rem; opacity:.7;">
+        <a href="/termos" style="color:#bbb;">Termos de Uso</a> • 
+        <a href="/privacidade" style="color:#bbb;">Política de Privacidade</a> • 
+        <a href="/reembolso" style="color:#bbb;">Política de Reembolso</a>
+      </p>
+    </div>
+  </footer>
 
- <script>
-   // FAQ Toggle
-   function toggleFaq(element) {
-     const item = element.parentElement;
-     const isActive = item.classList.contains('active');
-     
-     // Fecha todos os outros
-     document.querySelectorAll('.faq-item').forEach(faqItem => {
-       faqItem.classList.remove('active');
-     });
-     
-     // Abre o clicado se não estava ativo
-     if (!isActive) {
-       item.classList.add('active');
-     }
-   }
+  <script>
+    // FAQ Toggle
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    }
 
-   // Sticky bar - aparece após scroll
-   window.addEventListener('scroll', function() {
-     const stickyBar = document.getElementById('stickyBar');
-     const scrolled = window.pageYOffset;
-     
-     if (scrolled > 1000) {
-       stickyBar.style.display = 'block';
-     } else {
-       stickyBar.style.display = 'none';
-     }
-     
-     // Tracking de scroll
-     const totalHeight = document.body.scrollHeight - window.innerHeight;
-     const progress = (scrolled / totalHeight) * 100;
-     
-     if (progress > 25 && !window.scrollTracking25) {
-       fbq('trackCustom', 'Scroll25');
-       window.scrollTracking25 = true;
-     }
-     
-     if (progress > 50 && !window.scrollTracking50) {
-       fbq('trackCustom', 'Scroll50');
-       window.scrollTracking50 = true;
-     }
-     
-     if (progress > 75 && !window.scrollTracking75) {
-       fbq('trackCustom', 'Scroll75');
-       window.scrollTracking75 = true;
-     }
-   });
+    // Sticky bar - aparece após scroll
+    window.addEventListener('scroll', function() {
+      const stickyBar = document.getElementById('stickyBar');
+      const scrolled = window.pageYOffset;
+      if (scrolled > 900) { stickyBar.style.display = 'block'; } else { stickyBar.style.display = 'none'; }
 
-   // Animações de entrada
-   const observerOptions = {
-     threshold: 0.1,
-     rootMargin: '0px 0px -50px 0px'
-   };
+      // Tracking de scroll
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const progress = (scrolled / totalHeight) * 100;
+      if (progress > 25 && !window.scrollTracking25) { fbq('trackCustom', 'Scroll25'); window.scrollTracking25 = true; }
+      if (progress > 50 && !window.scrollTracking50) { fbq('trackCustom', 'Scroll50'); window.scrollTracking50 = true; }
+      if (progress > 75 && !window.scrollTracking75) { fbq('trackCustom', 'Scroll75'); window.scrollTracking75 = true; }
+    });
 
-   const observer = new IntersectionObserver((entries) => {
-     entries.forEach(entry => {
-       if (entry.isIntersecting) {
-         entry.target.classList.add('fade-in');
-       }
-     });
-   }, observerOptions);
+    // Animações de entrada
+    const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('fade-in'); });
+    }, observerOptions);
+    document.querySelectorAll('.module, .deliverable, .audience-card').forEach(el => observer.observe(el));
 
-   // Observar elementos para animação
-   document.querySelectorAll('.module, .deliverable, .audience-card').forEach(el => {
-     observer.observe(el);
-   });
+    // Tracking de tempo na página
+    let timeOnPage = 0;
+    setInterval(() => {
+      timeOnPage += 1;
+      if (timeOnPage === 30 && !window.timeTracking30) { fbq('trackCustom', 'TimeOnPage30s'); window.timeTracking30 = true; }
+      if (timeOnPage === 60 && !window.timeTracking60) { fbq('trackCustom', 'TimeOnPage1min'); window.timeTracking60 = true; }
+      if (timeOnPage === 120 && !window.timeTracking120) { fbq('trackCustom', 'TimeOnPage2min'); window.timeTracking120 = true; }
+      if (timeOnPage === 180 && !window.timeTracking180) { fbq('trackCustom', 'TimeOnPage3min'); window.timeTracking180 = true; }
+    }, 1000);
 
-   // Tracking de tempo na página
-   let timeOnPage = 0;
-   setInterval(() => {
-     timeOnPage += 1;
-     
-     if (timeOnPage === 30 && !window.timeTracking30) {
-       fbq('trackCustom', 'TimeOnPage30s');
-       window.timeTracking30 = true;
-     }
-     
-     if (timeOnPage === 60 && !window.timeTracking60) {
-       fbq('trackCustom', 'TimeOnPage1min');
-       window.timeTracking60 = true;
-     }
-     
-     if (timeOnPage === 120 && !window.timeTracking120) {
-       fbq('trackCustom', 'TimeOnPage2min');
-       window.timeTracking120 = true;
-     }
-     
-     if (timeOnPage === 180 && !window.timeTracking180) {
-       fbq('trackCustom', 'TimeOnPage3min');
-       window.timeTracking180 = true;
-     }
-   }, 1000);
+    // Tracking de hover nos botões
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+      btn.addEventListener('mouseenter', function() {
+        if (!window.buttonHoverTracked) { fbq('trackCustom', 'ButtonHover'); window.buttonHoverTracked = true; }
+      });
+    });
 
-   // Tracking de hover nos botões
-   document.querySelectorAll('.btn-primary').forEach(btn => {
-     btn.addEventListener('mouseenter', function() {
-       if (!window.buttonHoverTracked) {
-         fbq('trackCustom', 'ButtonHover');
-         window.buttonHoverTracked = true;
-       }
-     });
-   });
-
-   // Tracking de visualização de seções importantes
-   const sectionObserver = new IntersectionObserver((entries) => {
-     entries.forEach(entry => {
-       if (entry.isIntersecting) {
-         const sectionName = entry.target.className || entry.target.id;
-         fbq('trackCustom', 'ViewSection', {section: sectionName});
-       }
-     });
-   }, {threshold: 0.5});
-
-   document.querySelectorAll('.offer-block, .faq-section, .guarantee-section').forEach(section => {
-     sectionObserver.observe(section);
-   });
- </script>
+    // Tracking de visualização de seções importantes
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionName = entry.target.className || entry.target.id;
+          fbq('trackCustom', 'ViewSection', {section: sectionName});
+        }
+      });
+    }, {threshold: 0.5});
+    document.querySelectorAll('.offer-block, .faq-section, .guarantee-section').forEach(section => sectionObserver.observe(section));
+  </script>
 </body>
 </html>
